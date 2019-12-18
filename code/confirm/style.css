@@ -1,0 +1,125 @@
+html {
+	font: 18px 'Open sans', sans-serif;
+}
+form label {
+	font-size: .9em;
+}
+* {
+	box-sizing: border-box;
+	background-color: white;
+}
+html,body {
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+
+}
+form {
+	margin: 2% auto;
+	padding: 1em;
+	width: 375px;
+	height: 667px;
+	color: rgb(160, 160, 160);
+	box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.16);
+}
+
+.logo {
+    background-color: #1bc2a2;
+    height: 250px;
+    width: 110.7%;
+    margin-left: -18px;
+    margin-top: -18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.forgot {
+	text-align: center;
+}
+
+header, h1 {
+	background: transparent;
+	color: #fff;
+}
+
+.name {
+	width: 100%;
+}
+.name input, .submit input, select, textarea {
+	width: 47%;
+	height: 3em;
+	text-indent: .5em;
+	border: .1em solid rgb(177, 177, 177);
+	border-radius: radius;
+	outline-color: #1abc9c;
+	display: block;
+	margin: auto;
+	width: 99.5%;
+	border-bottom: radius solid darken(#1abc9c, 7%);
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	
+}
+.name input[name="surname"] {
+	float: right;
+}
+.name input[type="mail"] {
+	margin-top: 1em;
+	width: 100%;
+}
+.radio, .dropdown, .message, .check, .submit {
+	margin-top: 1em;
+}
+.dropdown select, .message textarea, .submit input {
+	width: 100%;
+}
+.dropdown select {
+	color: #aaa;
+}
+.message textarea {
+	height: 8em;
+}
+.radio input, .check input {
+	position: relative;
+	top: 1px;
+}
+.radio input:before, .check input:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	background: #e9e9e9;
+	border-radius: radius;
+	transition: all .35s ease;
+}
+.radio input:before {
+	border-radius: 50%;
+}
+
+.check input:before {
+	left: -.5px;
+}
+.submit input {
+	display: block;
+	margin: auto;
+	width: 99.5%;
+	background: #1abc9c;
+	color: #fff;
+	border: 0;
+	border-bottom: radius solid darken(#1abc9c, 7%);
+	font-size: 1em;
+	font-weight: bold;
+	focus, hover {
+		background: #16a085;
+		border-bottom-color: darken(#16a085, 7%);
+	}
+	&:active {
+		background: #1bc2a2;
+		border-bottom-color: darken(#1bc2a2, 7%);
+	}
+}
